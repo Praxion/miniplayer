@@ -1,0 +1,384 @@
+-------------------------------------------------------------------------------
+Test set: com.miniplayer.AppUiTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 10, Skipped: 0, Time elapsed: 4.054 s <<< FAILURE! -- in com.miniplayer.AppUiTest
+com.miniplayer.AppUiTest.onPositionDoesNotOverwriteSliderWhileUserIsActivelyDraggingIt(FxRobot) -- Time elapsed: 0.216 s <<< ERROR!
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.reflect.InvocationTargetException
+	at org.testfx.util.WaitForAsyncUtils.waitFor(WaitForAsyncUtils.java:301)
+	at org.testfx.api.FxToolkit.waitForSetup(FxToolkit.java:277)
+	at org.testfx.api.FxToolkit.setupApplication(FxToolkit.java:164)
+	at org.testfx.framework.junit5.ApplicationExtension.beforeEach(ApplicationExtension.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.util.concurrent.ExecutionException: java.lang.reflect.InvocationTargetException
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at org.testfx.util.WaitForAsyncUtils$ASyncFXCallable.get(WaitForAsyncUtils.java:698)
+	at org.testfx.toolkit.impl.ToolkitServiceImpl.lambda$setupApplication$6(ToolkitServiceImpl.java:131)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testfx.framework.junit5.ApplicationExtension$AnnotationBasedApplicationFixture.start(ApplicationExtension.java:151)
+	at org.testfx.framework.junit5.ApplicationAdapter.start(ApplicationAdapter.java:37)
+	at org.testfx.toolkit.impl.ApplicationServiceImpl.lambda$start$0(ApplicationServiceImpl.java:49)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$10(GtkApplication.java:263)
+	... 1 more
+Caused by: java.lang.IllegalStateException: Cannot set style once stage has been set visible
+	at javafx.stage.Stage.initStyle(Stage.java:488)
+	at com.miniplayer.App.start(App.java:62)
+	at com.miniplayer.AppUiTest.start(AppUiTest.java:54)
+	... 12 more
+
+com.miniplayer.AppUiTest.pausedEventSwitchesButtonBackToPlayIcon(FxRobot) -- Time elapsed: 0.218 s <<< ERROR!
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.reflect.InvocationTargetException
+	at org.testfx.util.WaitForAsyncUtils.waitFor(WaitForAsyncUtils.java:301)
+	at org.testfx.api.FxToolkit.waitForSetup(FxToolkit.java:277)
+	at org.testfx.api.FxToolkit.setupApplication(FxToolkit.java:164)
+	at org.testfx.framework.junit5.ApplicationExtension.beforeEach(ApplicationExtension.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.util.concurrent.ExecutionException: java.lang.reflect.InvocationTargetException
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at org.testfx.util.WaitForAsyncUtils$ASyncFXCallable.get(WaitForAsyncUtils.java:698)
+	at org.testfx.toolkit.impl.ToolkitServiceImpl.lambda$setupApplication$6(ToolkitServiceImpl.java:131)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testfx.framework.junit5.ApplicationExtension$AnnotationBasedApplicationFixture.start(ApplicationExtension.java:151)
+	at org.testfx.framework.junit5.ApplicationAdapter.start(ApplicationAdapter.java:37)
+	at org.testfx.toolkit.impl.ApplicationServiceImpl.lambda$start$0(ApplicationServiceImpl.java:49)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$10(GtkApplication.java:263)
+	... 1 more
+Caused by: java.lang.IllegalStateException: Cannot set style once stage has been set visible
+	at javafx.stage.Stage.initStyle(Stage.java:488)
+	at com.miniplayer.App.start(App.java:62)
+	at com.miniplayer.AppUiTest.start(AppUiTest.java:54)
+	... 12 more
+
+com.miniplayer.AppUiTest.windowIsUndecoratedAndAlwaysOnTop -- Time elapsed: 0.221 s <<< ERROR!
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.reflect.InvocationTargetException
+	at org.testfx.util.WaitForAsyncUtils.waitFor(WaitForAsyncUtils.java:301)
+	at org.testfx.api.FxToolkit.waitForSetup(FxToolkit.java:277)
+	at org.testfx.api.FxToolkit.setupApplication(FxToolkit.java:164)
+	at org.testfx.framework.junit5.ApplicationExtension.beforeEach(ApplicationExtension.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.util.concurrent.ExecutionException: java.lang.reflect.InvocationTargetException
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at org.testfx.util.WaitForAsyncUtils$ASyncFXCallable.get(WaitForAsyncUtils.java:698)
+	at org.testfx.toolkit.impl.ToolkitServiceImpl.lambda$setupApplication$6(ToolkitServiceImpl.java:131)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testfx.framework.junit5.ApplicationExtension$AnnotationBasedApplicationFixture.start(ApplicationExtension.java:151)
+	at org.testfx.framework.junit5.ApplicationAdapter.start(ApplicationAdapter.java:37)
+	at org.testfx.toolkit.impl.ApplicationServiceImpl.lambda$start$0(ApplicationServiceImpl.java:49)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$10(GtkApplication.java:263)
+	... 1 more
+Caused by: java.lang.IllegalStateException: Cannot set style once stage has been set visible
+	at javafx.stage.Stage.initStyle(Stage.java:488)
+	at com.miniplayer.App.start(App.java:62)
+	at com.miniplayer.AppUiTest.start(AppUiTest.java:54)
+	... 12 more
+
+com.miniplayer.AppUiTest.errorCallbackSurfacesMessageInTrackLabel(FxRobot) -- Time elapsed: 0.220 s <<< ERROR!
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.reflect.InvocationTargetException
+	at org.testfx.util.WaitForAsyncUtils.waitFor(WaitForAsyncUtils.java:301)
+	at org.testfx.api.FxToolkit.waitForSetup(FxToolkit.java:277)
+	at org.testfx.api.FxToolkit.setupApplication(FxToolkit.java:164)
+	at org.testfx.framework.junit5.ApplicationExtension.beforeEach(ApplicationExtension.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.util.concurrent.ExecutionException: java.lang.reflect.InvocationTargetException
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at org.testfx.util.WaitForAsyncUtils$ASyncFXCallable.get(WaitForAsyncUtils.java:698)
+	at org.testfx.toolkit.impl.ToolkitServiceImpl.lambda$setupApplication$6(ToolkitServiceImpl.java:131)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testfx.framework.junit5.ApplicationExtension$AnnotationBasedApplicationFixture.start(ApplicationExtension.java:151)
+	at org.testfx.framework.junit5.ApplicationAdapter.start(ApplicationAdapter.java:37)
+	at org.testfx.toolkit.impl.ApplicationServiceImpl.lambda$start$0(ApplicationServiceImpl.java:49)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$10(GtkApplication.java:263)
+	... 1 more
+Caused by: java.lang.IllegalStateException: Cannot set style once stage has been set visible
+	at javafx.stage.Stage.initStyle(Stage.java:488)
+	at com.miniplayer.App.start(App.java:62)
+	at com.miniplayer.AppUiTest.start(AppUiTest.java:54)
+	... 12 more
+
+com.miniplayer.AppUiTest.finishedEventResetsPlayPauseButtonWithoutClearingTheTrackLabel(FxRobot) -- Time elapsed: 0.219 s <<< ERROR!
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.reflect.InvocationTargetException
+	at org.testfx.util.WaitForAsyncUtils.waitFor(WaitForAsyncUtils.java:301)
+	at org.testfx.api.FxToolkit.waitForSetup(FxToolkit.java:277)
+	at org.testfx.api.FxToolkit.setupApplication(FxToolkit.java:164)
+	at org.testfx.framework.junit5.ApplicationExtension.beforeEach(ApplicationExtension.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.util.concurrent.ExecutionException: java.lang.reflect.InvocationTargetException
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at org.testfx.util.WaitForAsyncUtils$ASyncFXCallable.get(WaitForAsyncUtils.java:698)
+	at org.testfx.toolkit.impl.ToolkitServiceImpl.lambda$setupApplication$6(ToolkitServiceImpl.java:131)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testfx.framework.junit5.ApplicationExtension$AnnotationBasedApplicationFixture.start(ApplicationExtension.java:151)
+	at org.testfx.framework.junit5.ApplicationAdapter.start(ApplicationAdapter.java:37)
+	at org.testfx.toolkit.impl.ApplicationServiceImpl.lambda$start$0(ApplicationServiceImpl.java:49)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$10(GtkApplication.java:263)
+	... 1 more
+Caused by: java.lang.IllegalStateException: Cannot set style once stage has been set visible
+	at javafx.stage.Stage.initStyle(Stage.java:488)
+	at com.miniplayer.App.start(App.java:62)
+	at com.miniplayer.AppUiTest.start(AppUiTest.java:54)
+	... 12 more
+
+com.miniplayer.AppUiTest.onPositionUpdatesSliderAndElapsedLabelWhenUserIsNotDragging(FxRobot) -- Time elapsed: 0.212 s <<< ERROR!
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.reflect.InvocationTargetException
+	at org.testfx.util.WaitForAsyncUtils.waitFor(WaitForAsyncUtils.java:301)
+	at org.testfx.api.FxToolkit.waitForSetup(FxToolkit.java:277)
+	at org.testfx.api.FxToolkit.setupApplication(FxToolkit.java:164)
+	at org.testfx.framework.junit5.ApplicationExtension.beforeEach(ApplicationExtension.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.util.concurrent.ExecutionException: java.lang.reflect.InvocationTargetException
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at org.testfx.util.WaitForAsyncUtils$ASyncFXCallable.get(WaitForAsyncUtils.java:698)
+	at org.testfx.toolkit.impl.ToolkitServiceImpl.lambda$setupApplication$6(ToolkitServiceImpl.java:131)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testfx.framework.junit5.ApplicationExtension$AnnotationBasedApplicationFixture.start(ApplicationExtension.java:151)
+	at org.testfx.framework.junit5.ApplicationAdapter.start(ApplicationAdapter.java:37)
+	at org.testfx.toolkit.impl.ApplicationServiceImpl.lambda$start$0(ApplicationServiceImpl.java:49)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$10(GtkApplication.java:263)
+	... 1 more
+Caused by: java.lang.IllegalStateException: Cannot set style once stage has been set visible
+	at javafx.stage.Stage.initStyle(Stage.java:488)
+	at com.miniplayer.App.start(App.java:62)
+	at com.miniplayer.AppUiTest.start(AppUiTest.java:54)
+	... 12 more
+
+com.miniplayer.AppUiTest.onLoadedUpdatesSliderRangeAndTotalTimeAndSwitchesToPauseIcon(FxRobot) -- Time elapsed: 0.219 s <<< ERROR!
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.reflect.InvocationTargetException
+	at org.testfx.util.WaitForAsyncUtils.waitFor(WaitForAsyncUtils.java:301)
+	at org.testfx.api.FxToolkit.waitForSetup(FxToolkit.java:277)
+	at org.testfx.api.FxToolkit.setupApplication(FxToolkit.java:164)
+	at org.testfx.framework.junit5.ApplicationExtension.beforeEach(ApplicationExtension.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.util.concurrent.ExecutionException: java.lang.reflect.InvocationTargetException
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at org.testfx.util.WaitForAsyncUtils$ASyncFXCallable.get(WaitForAsyncUtils.java:698)
+	at org.testfx.toolkit.impl.ToolkitServiceImpl.lambda$setupApplication$6(ToolkitServiceImpl.java:131)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testfx.framework.junit5.ApplicationExtension$AnnotationBasedApplicationFixture.start(ApplicationExtension.java:151)
+	at org.testfx.framework.junit5.ApplicationAdapter.start(ApplicationAdapter.java:37)
+	at org.testfx.toolkit.impl.ApplicationServiceImpl.lambda$start$0(ApplicationServiceImpl.java:49)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$10(GtkApplication.java:263)
+	... 1 more
+Caused by: java.lang.IllegalStateException: Cannot set style once stage has been set visible
+	at javafx.stage.Stage.initStyle(Stage.java:488)
+	at com.miniplayer.App.start(App.java:62)
+	at com.miniplayer.AppUiTest.start(AppUiTest.java:54)
+	... 12 more
+
+com.miniplayer.AppUiTest.resumedEventSwitchesButtonToPauseIcon(FxRobot) -- Time elapsed: 0.213 s <<< ERROR!
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.reflect.InvocationTargetException
+	at org.testfx.util.WaitForAsyncUtils.waitFor(WaitForAsyncUtils.java:301)
+	at org.testfx.api.FxToolkit.waitForSetup(FxToolkit.java:277)
+	at org.testfx.api.FxToolkit.setupApplication(FxToolkit.java:164)
+	at org.testfx.framework.junit5.ApplicationExtension.beforeEach(ApplicationExtension.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.util.concurrent.ExecutionException: java.lang.reflect.InvocationTargetException
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at org.testfx.util.WaitForAsyncUtils$ASyncFXCallable.get(WaitForAsyncUtils.java:698)
+	at org.testfx.toolkit.impl.ToolkitServiceImpl.lambda$setupApplication$6(ToolkitServiceImpl.java:131)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testfx.framework.junit5.ApplicationExtension$AnnotationBasedApplicationFixture.start(ApplicationExtension.java:151)
+	at org.testfx.framework.junit5.ApplicationAdapter.start(ApplicationAdapter.java:37)
+	at org.testfx.toolkit.impl.ApplicationServiceImpl.lambda$start$0(ApplicationServiceImpl.java:49)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$10(GtkApplication.java:263)
+	... 1 more
+Caused by: java.lang.IllegalStateException: Cannot set style once stage has been set visible
+	at javafx.stage.Stage.initStyle(Stage.java:488)
+	at com.miniplayer.App.start(App.java:62)
+	at com.miniplayer.AppUiTest.start(AppUiTest.java:54)
+	... 12 more
+
+com.miniplayer.AppUiTest.startsWithPlayIconBeforeAnythingIsLoaded -- Time elapsed: 0.208 s <<< ERROR!
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.reflect.InvocationTargetException
+	at org.testfx.util.WaitForAsyncUtils.waitFor(WaitForAsyncUtils.java:301)
+	at org.testfx.api.FxToolkit.waitForSetup(FxToolkit.java:277)
+	at org.testfx.api.FxToolkit.setupApplication(FxToolkit.java:164)
+	at org.testfx.framework.junit5.ApplicationExtension.beforeEach(ApplicationExtension.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.util.concurrent.ExecutionException: java.lang.reflect.InvocationTargetException
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at org.testfx.util.WaitForAsyncUtils$ASyncFXCallable.get(WaitForAsyncUtils.java:698)
+	at org.testfx.toolkit.impl.ToolkitServiceImpl.lambda$setupApplication$6(ToolkitServiceImpl.java:131)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testfx.framework.junit5.ApplicationExtension$AnnotationBasedApplicationFixture.start(ApplicationExtension.java:151)
+	at org.testfx.framework.junit5.ApplicationAdapter.start(ApplicationAdapter.java:37)
+	at org.testfx.toolkit.impl.ApplicationServiceImpl.lambda$start$0(ApplicationServiceImpl.java:49)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$10(GtkApplication.java:263)
+	... 1 more
+Caused by: java.lang.IllegalStateException: Cannot set style once stage has been set visible
+	at javafx.stage.Stage.initStyle(Stage.java:488)
+	at com.miniplayer.App.start(App.java:62)
+	at com.miniplayer.AppUiTest.start(AppUiTest.java:54)
+	... 12 more
+
+com.miniplayer.AppUiTest.processExitedDisablesThePlayPauseButton(FxRobot) -- Time elapsed: 0.209 s <<< ERROR!
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.reflect.InvocationTargetException
+	at org.testfx.util.WaitForAsyncUtils.waitFor(WaitForAsyncUtils.java:301)
+	at org.testfx.api.FxToolkit.waitForSetup(FxToolkit.java:277)
+	at org.testfx.api.FxToolkit.setupApplication(FxToolkit.java:164)
+	at org.testfx.framework.junit5.ApplicationExtension.beforeEach(ApplicationExtension.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.util.concurrent.ExecutionException: java.lang.reflect.InvocationTargetException
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at org.testfx.util.WaitForAsyncUtils$ASyncFXCallable.get(WaitForAsyncUtils.java:698)
+	at org.testfx.toolkit.impl.ToolkitServiceImpl.lambda$setupApplication$6(ToolkitServiceImpl.java:131)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testfx.framework.junit5.ApplicationExtension$AnnotationBasedApplicationFixture.start(ApplicationExtension.java:151)
+	at org.testfx.framework.junit5.ApplicationAdapter.start(ApplicationAdapter.java:37)
+	at org.testfx.toolkit.impl.ApplicationServiceImpl.lambda$start$0(ApplicationServiceImpl.java:49)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$10(GtkApplication.java:263)
+	... 1 more
+Caused by: java.lang.IllegalStateException: Cannot set style once stage has been set visible
+	at javafx.stage.Stage.initStyle(Stage.java:488)
+	at com.miniplayer.App.start(App.java:62)
+	at com.miniplayer.AppUiTest.start(AppUiTest.java:54)
+	... 12 more
+

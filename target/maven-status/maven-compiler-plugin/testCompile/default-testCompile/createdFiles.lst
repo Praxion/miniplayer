@@ -1,0 +1,7 @@
+com/miniplayer/AppUiTest.class
+com/miniplayer/FakeEngineScript.class
+com/miniplayer/EngineProcessResilienceTest.class
+com/miniplayer/AppFormatTimeTest.class
+com/miniplayer/EngineProcessFakeScriptTest.class
+com/miniplayer/EngineProcessRealBinaryIT.class
+com/miniplayer/EngineProcessConcurrencyTest.class

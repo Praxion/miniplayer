@@ -1,0 +1,51 @@
+-------------------------------------------------------------------------------
+Test set: com.miniplayer.EngineProcessResilienceTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 9.348 s <<< FAILURE! -- in com.miniplayer.EngineProcessResilienceTest
+com.miniplayer.EngineProcessResilienceTest.garbageLineIsReportedAsErrorNotSilentlyDropped -- Time elapsed: 3.165 s <<< FAILURE!
+Wanted but not invoked:
+listener.onError(
+    contains("Unrecognized engine output")
+);
+-> at com.miniplayer.EngineProcessResilienceTest.garbageLineIsReportedAsErrorNotSilentlyDropped(EngineProcessResilienceTest.java:53)
+
+However, there was exactly 1 interaction with this mock:
+listener.onReady();
+-> at com.miniplayer.EngineProcess.dispatch(EngineProcess.java:208)
+
+
+	at com.miniplayer.EngineProcessResilienceTest.garbageLineIsReportedAsErrorNotSilentlyDropped(EngineProcessResilienceTest.java:53)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+com.miniplayer.EngineProcessResilienceTest.sendingCommandsAfterProcessDiedNeverThrows -- Time elapsed: 3.036 s <<< FAILURE!
+Wanted but not invoked:
+listener.onProcessExited(7);
+-> at com.miniplayer.EngineProcessResilienceTest.sendingCommandsAfterProcessDiedNeverThrows(EngineProcessResilienceTest.java:85)
+
+However, there was exactly 1 interaction with this mock:
+listener.onReady();
+-> at com.miniplayer.EngineProcess.dispatch(EngineProcess.java:208)
+
+
+	at com.miniplayer.EngineProcessResilienceTest.sendingCommandsAfterProcessDiedNeverThrows(EngineProcessResilienceTest.java:85)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+com.miniplayer.EngineProcessResilienceTest.processCrashIsReportedWithItsExitCode -- Time elapsed: 3.050 s <<< FAILURE!
+Wanted but not invoked:
+listener.onProcessExited(7);
+-> at com.miniplayer.EngineProcessResilienceTest.processCrashIsReportedWithItsExitCode(EngineProcessResilienceTest.java:60)
+
+However, there was exactly 1 interaction with this mock:
+listener.onReady();
+-> at com.miniplayer.EngineProcess.dispatch(EngineProcess.java:208)
+
+
+	at com.miniplayer.EngineProcessResilienceTest.processCrashIsReportedWithItsExitCode(EngineProcessResilienceTest.java:60)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
