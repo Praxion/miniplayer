@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.miniplayer.EngineProcessResilienceTest" time="9.348" tests="4" errors="0" skipped="0" failures="3">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.miniplayer.EngineProcessResilienceTest" time="4.391" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/jamesdemello/Documents/miniplayer/target/surefire/surefirebooter-20260905161302997_3.jar /home/jamesdemello/Documents/miniplayer/target/surefire 2026-09-05T16-13-02_888-jvmRun1 surefire-20260905161302997_1tmp surefire_0-20260905161302997_2tmp"/>
+    <property name="sun.java.command" value="/home/jamesdemello/Documents/miniplayer/target/surefire/surefirebooter-20260906105842699_3.jar /home/jamesdemello/Documents/miniplayer/target/surefire 2026-09-06T10-58-42_566-jvmRun1 surefire-20260906105842699_1tmp surefire_0-20260906105842699_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/jamesdemello/Documents/miniplayer/target/test-classes:/home/jamesdemello/Documents/miniplayer/target/classes:/home/jamesdemello/.m2/repository/org/openjfx/javafx-controls/21.0.2/javafx-controls-21.0.2.jar:/home/jamesdemello/.m2/repository/org/openjfx/javafx-controls/21.0.2/javafx-controls-21.0.2-linux.jar:/home/jamesdemello/.m2/repository/org/openjfx/javafx-graphics/21.0.2/javafx-graphics-21.0.2.jar:/home/jamesdemello/.m2/repository/org/openjfx/javafx-graphics/21.0.2/javafx-graphics-21.0.2-linux.jar:/home/jamesdemello/.m2/repository/org/openjfx/javafx-base/21.0.2/javafx-base-21.0.2.jar:/home/jamesdemello/.m2/repository/org/openjfx/javafx-base/21.0.2/javafx-base-21.0.2-linux.jar:/home/jamesdemello/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/jamesdemello/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/jamesdemello/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/jamesdemello/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/jamesdemello/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/jamesdemello/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/jamesdemello/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/jamesdemello/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/home/jamesdemello/.m2/repository/org/mockito/mockito-core/5.12.0/mockito-core-5.12.0.jar:/home/jamesdemello/.m2/repository/net/bytebuddy/byte-buddy/1.14.15/byte-buddy-1.14.15.jar:/home/jamesdemello/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.15/byte-buddy-agent-1.14.15.jar:/home/jamesdemello/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/jamesdemello/.m2/repository/org/mockito/mockito-junit-jupiter/5.12.0/mockito-junit-jupiter-5.12.0.jar:/home/jamesdemello/.m2/repository/org/testfx/testfx-core/4.0.18/testfx-core-4.0.18.jar:/home/jamesdemello/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/home/jamesdemello/.m2/repository/org/assertj/assertj-core/3.13.2/assertj-core-3.13.2.jar:/home/jamesdemello/.m2/repository/org/osgi/org.osgi.core/6.0.0/org.osgi.core-6.0.0.jar:/home/jamesdemello/.m2/repository/org/testfx/testfx-junit5/4.0.18/testfx-junit5-4.0.18.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/jamesdemello/Documents/miniplayer/target/surefire/surefirebooter-20260905161302997_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/jamesdemello/Documents/miniplayer/target/surefire/surefirebooter-20260906105842699_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.12+8-1-24.04-Ubuntu"/>
     <property name="user.name" value="jamesdemello"/>
@@ -54,60 +54,14 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="garbageLineIsReportedAsErrorNotSilentlyDropped" classname="com.miniplayer.EngineProcessResilienceTest" time="3.165">
-    <failure message="&#10;Wanted but not invoked:&#10;listener.onError(&#10;    contains(&quot;Unrecognized engine output&quot;)&#10;);&#10;-&gt; at com.miniplayer.EngineProcessResilienceTest.garbageLineIsReportedAsErrorNotSilentlyDropped(EngineProcessResilienceTest.java:53)&#10;&#10;However, there was exactly 1 interaction with this mock:&#10;listener.onReady();&#10;-&gt; at com.miniplayer.EngineProcess.dispatch(EngineProcess.java:208)&#10;&#10;" type="Wanted but not invoked"><![CDATA[Wanted but not invoked:
-listener.onError(
-    contains("Unrecognized engine output")
-);
--> at com.miniplayer.EngineProcessResilienceTest.garbageLineIsReportedAsErrorNotSilentlyDropped(EngineProcessResilienceTest.java:53)
-
-However, there was exactly 1 interaction with this mock:
-listener.onReady();
--> at com.miniplayer.EngineProcess.dispatch(EngineProcess.java:208)
-
-
-	at com.miniplayer.EngineProcessResilienceTest.garbageLineIsReportedAsErrorNotSilentlyDropped(EngineProcessResilienceTest.java:53)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-]]></failure>
+  <testcase name="garbageLineIsReportedAsErrorNotSilentlyDropped" classname="com.miniplayer.EngineProcessResilienceTest" time="1.017">
     <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/home/jamesdemello/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.15/byte-buddy-agent-1.14.15.jar)
 WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
 WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
 WARNING: Dynamic loading of agents will be disallowed by default in a future release
 ]]></system-err>
   </testcase>
-  <testcase name="sendingCommandsAfterProcessDiedNeverThrows" classname="com.miniplayer.EngineProcessResilienceTest" time="3.036">
-    <failure message="&#10;Wanted but not invoked:&#10;listener.onProcessExited(7);&#10;-&gt; at com.miniplayer.EngineProcessResilienceTest.sendingCommandsAfterProcessDiedNeverThrows(EngineProcessResilienceTest.java:85)&#10;&#10;However, there was exactly 1 interaction with this mock:&#10;listener.onReady();&#10;-&gt; at com.miniplayer.EngineProcess.dispatch(EngineProcess.java:208)&#10;&#10;" type="Wanted but not invoked"><![CDATA[Wanted but not invoked:
-listener.onProcessExited(7);
--> at com.miniplayer.EngineProcessResilienceTest.sendingCommandsAfterProcessDiedNeverThrows(EngineProcessResilienceTest.java:85)
-
-However, there was exactly 1 interaction with this mock:
-listener.onReady();
--> at com.miniplayer.EngineProcess.dispatch(EngineProcess.java:208)
-
-
-	at com.miniplayer.EngineProcessResilienceTest.sendingCommandsAfterProcessDiedNeverThrows(EngineProcessResilienceTest.java:85)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-]]></failure>
-  </testcase>
-  <testcase name="processCrashIsReportedWithItsExitCode" classname="com.miniplayer.EngineProcessResilienceTest" time="3.05">
-    <failure message="&#10;Wanted but not invoked:&#10;listener.onProcessExited(7);&#10;-&gt; at com.miniplayer.EngineProcessResilienceTest.processCrashIsReportedWithItsExitCode(EngineProcessResilienceTest.java:60)&#10;&#10;However, there was exactly 1 interaction with this mock:&#10;listener.onReady();&#10;-&gt; at com.miniplayer.EngineProcess.dispatch(EngineProcess.java:208)&#10;&#10;" type="Wanted but not invoked"><![CDATA[Wanted but not invoked:
-listener.onProcessExited(7);
--> at com.miniplayer.EngineProcessResilienceTest.processCrashIsReportedWithItsExitCode(EngineProcessResilienceTest.java:60)
-
-However, there was exactly 1 interaction with this mock:
-listener.onReady();
--> at com.miniplayer.EngineProcess.dispatch(EngineProcess.java:208)
-
-
-	at com.miniplayer.EngineProcessResilienceTest.processCrashIsReportedWithItsExitCode(EngineProcessResilienceTest.java:60)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-]]></failure>
-  </testcase>
-  <testcase name="shutdownForceKillsAProcessThatIgnoresQuit" classname="com.miniplayer.EngineProcessResilienceTest" time="0.048"/>
+  <testcase name="sendingCommandsAfterProcessDiedNeverThrows" classname="com.miniplayer.EngineProcessResilienceTest" time="0.259"/>
+  <testcase name="processCrashIsReportedWithItsExitCode" classname="com.miniplayer.EngineProcessResilienceTest" time="0.041"/>
+  <testcase name="shutdownForceKillsAProcessThatIgnoresQuit" classname="com.miniplayer.EngineProcessResilienceTest" time="3.033"/>
 </testsuite>

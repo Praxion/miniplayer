@@ -51,7 +51,16 @@ class AppUiTest {
     void start(Stage stage) throws Exception {
         System.setProperty("engine.path", "/nonexistent/audio_engine_for_ui_tests");
         app = new App();
-        app.start(stage);
+        // Deliberately ignore the Stage TestFX hands us here and give
+        // App a brand-new one instead. TestFX's ApplicationExtension
+        // shows its primary stage internally before invoking @Start, and
+        // App.start() calls stage.initStyle(UNDECORATED) - which JavaFX
+        // only allows before a stage's first show(). Reusing the
+        // already-shown TestFX stage throws
+        // "IllegalStateException: Cannot set style once stage has been
+        // set visible"; a fresh Stage() has never been shown, so
+        // initStyle() succeeds normally.
+        app.start(new Stage());
     }
 
     @Test
