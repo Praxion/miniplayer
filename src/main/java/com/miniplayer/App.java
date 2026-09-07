@@ -191,7 +191,14 @@ public class App extends Application implements EngineListener {
         FileChooser chooser = new FileChooser();
         chooser.setTitle("Choose an audio file");
         chooser.getExtensionFilters().add(new FileChooser.ExtensionFilter(
-                "Audio files", "*.mp3", "*.wav", "*.flac", "*.ogg"));
+                "All Media Files",
+                "*.mp3", "*.wav", "*.flac", "*.ogg", 
+                "*.m4a", "*.m4b", "*.m4p", 
+                "*.mp4", "*.mkv", "*.avi", "*.mov", "*.flv", "*.wmv", "*.wma", 
+                "*.aac", "*.ac3", "*.aiff", "*.ape", "*.dsd", "*.dts", "*.mka", 
+                "*.mpc", "*.oga", "*.opus", "*.tta", "*.wv", 
+                "*.3gp", "*.asf", "*.dv", "*.m2ts", "*.mts", "*.ts", "*.vob", 
+                "*.ogm", "*.rm", "*.rmvb", "*.webm"));
         File file = chooser.showOpenDialog(stage);
         if (file != null && engine != null) {
             trackLabel.setText(file.getName());

@@ -57,7 +57,7 @@
 namespace {
 
 // How often we emit POS: updates while something is loaded.
-constexpr auto kPositionReportInterval = std::chrono::milliseconds(250);
+constexpr auto kPositionReportInterval = std::chrono::milliseconds(1000);
 
 // Trim trailing \r (in case Java writes CRLF line endings) and whitespace.
 std::string trim(const std::string& s) {
